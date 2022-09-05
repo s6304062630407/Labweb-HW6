@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+    function changeColor(x){
+        if(x == '1'){
+        var box1 = document.getElementById("name");
+        box1.style.color = 'green';}
+        else if(x == '2'){
+        var box2 = document.getElementById("age");
+        box2.style.color = 'green';}
+        else if(x == '3'){
+        var box3 = document.getElementById("birth");
+        box3.style.color = 'green';}
+    }
+</script>
+</head>
+<body>
+    <form>
+        Name: <input type="text" id="name" onblur="changeColor(1)"><br>
+        Age: <input type="text" id="age" onblur="changeColor(2)"><br>
+        Birthdate: <input type="text" id="birth" onblur="changeColor(3)"><br>
+    </form>
+</body>
+</html>
